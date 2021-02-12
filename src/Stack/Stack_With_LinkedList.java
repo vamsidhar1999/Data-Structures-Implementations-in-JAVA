@@ -24,7 +24,7 @@ class LNode
 				
 				else
 				{
-					tmp1.next=head;
+					tmp1.next=head;		//inserting element at the starting of linked list and making it as head.
 					
 					head=tmp1;
 				}
