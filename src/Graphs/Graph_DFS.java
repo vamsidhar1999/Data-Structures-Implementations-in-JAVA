@@ -9,14 +9,14 @@ public class Graph_DFS {
 	Graph_DFS(int vertices) {
 		adjLists = new LinkedList[vertices]; // initializing the array with total number of vertices.
 		visited = new boolean[vertices];
-		
+		// creating graph structure
 		for(int i=0;i<vertices;i++) {
 			adjLists[i] = new LinkedList<Integer>();
 		}
 	}
 	
 	void addEdge(int v1, int v2) {
-		adjLists[v1].add(v2);
+		adjLists[v1].add(v2); // if graph is bidirectional, include two statements, if not add only once based on direction.
 		adjLists[v2].add(v1);
 	}
 	
